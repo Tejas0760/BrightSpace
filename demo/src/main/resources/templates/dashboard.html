@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            background-color: #f4f4f4;
+            position: fixed;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        .main {
+            margin-left: 260px; /* Sidebar width + some margin */
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#settings">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+
+    <div class="main">
+        <h2>Welcome to your Dashboard</h2>
+        <div class="card">
+            <h3>Card Title 1</h3>
+            <p>This is a simple card with some content.</p>
+        </div>
+        <div class="card">
+            <h3>Card Title 2</h3>
+            <p>This is another card with additional information.</p>
+        </div>
+    </div>
+
+</body>
+</html>
